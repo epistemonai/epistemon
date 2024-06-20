@@ -1,7 +1,7 @@
 CC=gcc
-CFLAGS=-Wall -I../include -std=c11
+CFLAGS=-Wall -I../ -std=c11
 
 .PHONY: all
 
 all:
-	$(CC) $(CFLAGS) tensors.c -o ../build/tensors
+	$(CC) $(CFLAGS) -DEPISTEMON_ENTRY tensors.c -o ../build/tensors
